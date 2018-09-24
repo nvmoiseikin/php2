@@ -17,8 +17,17 @@ class Product {
     public function changeQuantity(n) {
         $quantity += n; 
     }
-
 }
 
+/*** 4 ex ***/
+class SaleProduct extends Product {
+	
+	protected $discount;
+	
+	public function __construct($id, $name, $price, $quantity, $discount){
+		parent:: __construct($id, $name, $price, $quantity);
+		$this->$discount = $discount;
+	}	
+}
 
 ?>
