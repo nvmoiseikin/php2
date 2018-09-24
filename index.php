@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Moiseikin</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-</body>
-</html>
+<?php 
+/*** 1 ex ***/
+
+class Product {
+	static $id;
+	protected $name;
+	protected $price;
+	protected $quantity;
+	
+	public function __construct($id, $name, $price, $quantity){
+		$this->$id = $id;
+		$this->$name = $name;
+		$this->$price = $price;
+		$this->$quantity = $quantity;
+	}	
+	
+    public function changeQuantity(n) {
+        $quantity += n; 
+    }
+
+}
+
+
+?>
