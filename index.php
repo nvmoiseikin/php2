@@ -1,5 +1,5 @@
 <?php 
-/*** 1 ex ***/
+/*** 1, 2, 3 ex ***/
 
 class Product {
 	static $id;
