@@ -1,0 +1,13 @@
+<!-- begin: galery.tmpl -->
+	{% for views, block in blocks %}
+	{% set href = "photo.php?src=images/full/" %}
+		<div class='blockType{{block.type}} blockType'>
+		{% for photo in block.phInBlock %}
+			<a  href='{{href}}{{photo.name}}' class='typeA{{photo.type}} type'>
+				<img src='{{photo.path}}'>
+				<div class='views'>{{photo.views}}</div>
+			</a>
+		{% endfor %}
+		</div>
+	{% endfor %}			
+<!-- end: galery.tmpl -->

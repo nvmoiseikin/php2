@@ -1,0 +1,9 @@
+<!-- begin: header.tmpl -->
+<h1>Фото Галерея!</h1>
+<form method="post" action="phpFiles/load.php" enctype="multipart/form-data">
+	<input type="file" name="photo">
+	<input type="text" name="counter" style="display: none;" id="counter" value="{{newFileName}}">
+	<input type="submit" value="отправить">
+</form>
+<a href='index.php' style='display: {{backToGalery}}' class="backWrap" ><input type="submit" class="back" value="Назад в Галерею"></a>
+<!-- end: header.tmpl -->
